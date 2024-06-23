@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReCreate market", "ReCreate market\ReCreate market.csproj", "{DABBC4BB-DCEC-4AC5-A975-5B9DDD622EBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DABBC4BB-DCEC-4AC5-A975-5B9DDD622EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DABBC4BB-DCEC-4AC5-A975-5B9DDD622EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DABBC4BB-DCEC-4AC5-A975-5B9DDD622EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DABBC4BB-DCEC-4AC5-A975-5B9DDD622EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {215F6007-033A-4941-96E3-E7B88C07EBD4}
+	EndGlobalSection
+EndGlobal

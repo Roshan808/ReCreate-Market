@@ -1,0 +1,219 @@
+﻿ <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ReCreate_market.Site1" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <%--bootstrap css --%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.min1.css" rel="stylesheet" />
+     <%--datatable css --%>
+    <a href="datatables/css/"</a>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+     <%--fontawesom css --%>
+    <link href="fontawesom/fontawesome-free-6.5.1-web/css/all.css" rel="stylesheet" />
+    <%--External my style --%>
+    <link href="style/StyleSheet1.css" rel="stylesheet" />
+
+     <%--jquerry js --%>
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+     <%--poper js --%>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+     <%--bootstrap js --%>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            overflow: auto;
+        }
+        
+
+    </style>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+    </script>
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="font-family: 'Poppins', sans-serif";>
+    <form id="form1" runat="server">
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="imeges/11.jpg" / width="50" height="50">
+                    <asp:LinkButton class="navbar-text" ID="Linkbutton13" runat="server" PostBackUrl="~/product2.aspx">ReCreate Market</asp:LinkButton>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Home.aspx">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="About_us.aspx">About Us</a>
+                        </li>                  
+
+                    </ul>
+
+                    <ul class="navbar-nav">
+                        <li clas="nav-item active"">
+                            <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="imeges/shopping-cart_8.png" Height="35px" Width="35px" OnClick="ImageButton1_Click" />
+                        </li>
+                        <li>
+                         
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton4" runat="server" PostBackUrl="./Products.aspx">View Products</asp:LinkButton>
+                        </li>
+
+                        <li class="nav-item active">
+                            <asp:LinkButton CssClass="nav-link" ID="LinkButton6" runat="server" Text="Seller's Form" PostBackUrl="~/Seller.aspx"></asp:LinkButton>
+                            </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton CssClass="nav-link" ID="LinkButton1" runat="server" Text="User Login" PostBackUrl="./Userlogin.aspx"></asp:LinkButton>
+
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton2" runat="server" PostBackUrl="./Sign_Up.aspx">Sign Up</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton5" runat="server" PostBackUrl="./Admin_login.aspx">Admin Login</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server">Logout</asp:LinkButton>
+                        </li>
+
+                        <li class="nav-item active">
+
+                        </li>
+                    </ul>
+                </div>
+
+
+            </nav>
+    </div>
+     <!-- Main Content Placeholder -->
+  
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- Main Content Placeholder -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> </button>
+
+
+          <!-- Footer -->
+        <footer class="bg-body-tertiary text-center text-lg-start">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">ReCreate Market</h5>
+
+                        <br />
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="Product2.aspx" class="text-body text-decoration-none">Scrapyard</a>
+                            </li>
+                            <li>
+                                <a href="Products.aspx" class="text-body text-decoration-none">Creative Store</a>
+                            </li>
+                            <li>
+                                <a href="Addto_Cart.aspx" class="text-body text-decoration-none">Your Cart</a>
+                            </li>
+                            <li>
+                                <a href="PlaceOrder.aspx" class="text-body text-decoration-none">Your Orders</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-0">Accounts</h5>
+                        <br />
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="Userlogin.aspx" class="text-body text-decoration-none">My Account</a>
+                            </li>
+                            
+                            <li>
+                                <a href="PlaceOrder.aspx" class="text-body text-decoration-none">Check Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Category</h5>
+                        <br />
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-body text-decoration-none" onclick="scrollToTop()">Life style-Women</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-body text-decoration-none" onclick="scrollToTop()">Arts</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-body text-decoration-none" onclick="scrollToTop()">Home Decor</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-body text-decoration-none" onclick="scrollToTop()">Others</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-0">Contact</h5>
+                        <br />
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!" class="text-body text-decoration-none">Phone: 7350854287</a>
+                            </li>
+                            <br />
+                            <br />
+                            <li>
+                                <a href="#!" class="text-body text-decoration-none">Mumbai</a>
+                            </li>
+                            <br />
+                            <br />
+                            <li>
+                                <a href="#!" class="text-body text-decoration-none">Nalasopara East-400209</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <br />
+            <br />
+        </footer>
+       
+      
+        <!-- ./Footer -->
+         </form>
+ 
+</body>
+</html>
